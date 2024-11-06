@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player |ScriptingWithSaad</title>
+
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+    <!-- link css file -->
+    <link rel="stylesheet" href="./stylesheet/style.css">
+
+    <!-- link cdn -->
+    <script src="https://kit.fontawesome.com/4bf93a47dd.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+    <div class="music-player">
+
+        <nav>
+            <div class="circle">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+
+            <div class="circle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <img src="./assets/images/image.png" class="song-img">
+        <h2>Despacito</h2>
+        <p>Luis Fonsi FT. Puerto Rican</p>
+
+        <audio id="song">
+            <source src="./assets/audio/Justin Bieber - Despacito (Lyrics  Letra) ft. Luis Fonsi & Daddy Yankee.mp3"
+                type="audio/mpeg">
+        </audio>
+
+        <input type="range" value="0" id="progress">
+
+        <div class="controls">
+            <div><i class="fa-solid fa-backward"></i></div>
+            <div onclick="playpause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+            <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+
+    </div>
+
+    <!-- link script file -->
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

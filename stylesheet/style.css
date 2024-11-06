@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background: #333;
+}
+
+.music-player{
+    background: #ffe0ef;
+    /* height: 80vh; */
+    width: 30vw;
+    text-align: center;
+    padding: 1.5vw ;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+
+/* circle */
+.circle{
+    border-radius: 50%;
+    height: 2.3vw;
+    width: 2.3vw;
+    background: #fff;
+    color: #f53192;
+    box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle i{
+    font-size: 1.3vw;
+}
+
+
+/* song-img */
+.song-img{
+    border-radius: 50%;
+    width: 13vw;
+    border: .5vw solid #fff;
+    box-shadow: 0 10px 60px rgba(255, 26, 26, 0.22);
+}
+
+
+/* music player */
+.music-player h2{
+    font-size: 2vw;
+    font-weight: 400;
+    color: #333;
+    margin-top: 1vw;
+}
+
+.music-player p{
+    font-size: 1vw;
+}
+
+#progress{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #f53192;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 2vw 0;
+}
+
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 1.5vw;
+    width: 1.5vw;
+    border-radius: 50%;
+    background: #f53192;
+    border: .3vw solid #fff;
+    box-shadow: 0 .3vw .3vw rgba(255, 26, 26, 0.22);
+}
+
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #fff;
+    color: #f53192;
+    box-shadow: 0 .3vw .3vw rgba(255, 26, 26, 0.22);
+}
+
+.controls div:nth-child(2){
+    transform: scale(1.5);
+    background: #f53192;
+    color: #fff;
+}
